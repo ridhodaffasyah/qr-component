@@ -30,7 +30,6 @@
     .card-qr {
       background-color: hsl(0, 0%, 100%);
       border-radius: 15px;
-      box-shadow: 0 5px 20px hsl(0, 1%, 63%);
       margin: 0 auto;
       max-width: 300px;
       padding: 1rem;
@@ -40,6 +39,7 @@
       object-fit: contain;
       width: 100%;
       border-radius: 10px;
+      height: min-content;
     }
     .title {
       color: hsl(218, 44%, 22%);
@@ -82,7 +82,9 @@
 <body>
   <main>
     <div class="card-qr">
-      <img src="images/image-qr-code.png" alt="qr-code" class="qr-img">
+      <div>
+        <img src="images/image-qr-code.png" alt="qr-code" class="qr-img">
+      </div>
       <div class="card-text">
         <h1 class="title">Improve your front-end skills by building projects</h1>
         <h2 class="paragraph">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</h2>
